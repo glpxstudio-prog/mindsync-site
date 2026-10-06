@@ -1,0 +1,14 @@
+{
+  "pipeline": {
+    "name": "MindSync Sales",
+    "stages": ["New Lead", "Contacted", "Audit / Call Booked", "Proposal Sent", "Negotiating", "Won", "Lost"]
+  },
+  "customFields": [
+    {"name": "Lead Area", "type": "SINGLE_OPTIONS", "options": ["Orlando","Winter Park","Kissimmee","Lake Mary","Altamonte Springs","Sanford","Clermont","Apopka","Website (homepage)","Other"]},
+    {"name": "Service Interest", "type": "MULTIPLE_OPTIONS", "options": ["Web Design","CRM & Pipeline","Follow-up Automation","Booking & Reviews","Local SEO","All services"]},
+    {"name": "Business Name & Website", "type": "TEXT"},
+    {"name": "Lead Source Page", "type": "TEXT"},
+    {"name": "Lead Message", "type": "LARGE_TEXT"}
+  ],
+  "tags": ["website lead","area: orlando","area: winter park","area: kissimmee","area: lake mary","area: altamonte springs","area: sanford","area: clermont","area: apopka","svc: web design","svc: crm","svc: automation","svc: booking & reviews","svc: local seo","needs follow-up","spanish"]
+}
