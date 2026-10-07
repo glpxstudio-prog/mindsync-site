@@ -84,7 +84,7 @@ SERVICES = [
     pitch="Show up when customers search for what you do — on Google Search and in the Maps pack — with a strategy built for your city.",
     incl=["Google Business Profile optimization","On-page SEO for local keywords","Local citations & directories","City & service landing pages","Review strategy","Monthly ranking reports"],
     steps=[("Audit","We check your site, profile and competitors."),("Optimize","We fix technical issues and optimize pages and your profile."),("Build","Citations, content and reviews grow your local authority."),("Report","Monthly reports show rankings, calls and leads.")],
-    faq=[("How long does SEO take?","Most businesses see early movement in 30–60 days, with bigger gains over 3–6 months."),("Are there contracts?","No. SEO plans are month-to-month.")]),
+    faq=[("How long does SEO take?","Most businesses see early movement in 30–60 days, with bigger gains over 3–6 months."),("Are there contracts?","Standard SEO plans are month-to-month. Founding Client plans have a 6-month minimum.")]),
 ]
 
 def e(x): return html.escape(x)
@@ -201,7 +201,7 @@ def hub(a):
 <section class="band">
   <div class="wrap center">
     <p class="eyebrow rv">FAQ</p><h2 class="rv" style="margin-top:14px">{e(a['city'])} <em>questions</em></h2>
-    <div class="faq-box rv">{faqs}<details><summary>Are there long-term contracts?</summary><p>No. Monthly plans are month-to-month.</p></details></div>
+    <div class="faq-box rv">{faqs}<details><summary>How much does it cost?</summary><p>Founding Client rate: $500 setup + $100/mo for the first 5 businesses (6-month minimum, text &amp; email usage billed at cost). Standard plans start at $2,500 setup + $297/mo.</p></details></div>
   </div>
 </section>""" + contact(a, "audit", "All services") + f"""
 <section><div class="wrap"><p class="eyebrow rv">Nearby areas</p><h2 class="rv" style="margin:14px 0 36px">Also <em>serving</em></h2><div class="area-grid rv">{near}</div></div></section>""" + foot(a, "../../")
