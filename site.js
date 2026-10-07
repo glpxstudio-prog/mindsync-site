@@ -10,7 +10,7 @@ document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>
 document.querySelectorAll('.svc details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.svc details').forEach(o=>{if(o!==d)o.open=false})}));
 // ---- Lead forms → GoHighLevel ----
 // Paste the URL from your GHL workflow's "Inbound Webhook" trigger below.
-const GHL_WEBHOOK_URL = "";
+const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/aphktgldQF2rQZfHLz5c/webhook-trigger/d7fdc992-3895-4c62-92c4-c488d7aa747e";
 document.querySelectorAll('form.lead-form, form#lead').forEach(f=>f.addEventListener('submit',async e=>{
   e.preventDefault();
   const fd=new FormData(f), data={};
