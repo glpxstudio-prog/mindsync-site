@@ -1,6 +1,9 @@
 document.querySelectorAll('.yr,#yr').forEach(el=>el.textContent=new Date().getFullYear());
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.documentElement.classList.add('js');
+const revealAll=()=>document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+setTimeout(revealAll,1200); // safety net: never leave content hidden
+const io=('IntersectionObserver' in window)?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12}):null;
+if(io)document.querySelectorAll('.rv').forEach(el=>io.observe(el));else revealAll();
 const hdr=document.querySelector('header');
 addEventListener('scroll',()=>hdr&&hdr.classList.toggle('scrolled',scrollY>10));
 document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));

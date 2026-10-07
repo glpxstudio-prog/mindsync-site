@@ -215,8 +215,8 @@ footer{padding:70px 0 40px}
 .big-word em{color:var(--blue)}
 
 /* reveal */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
-.rv.in{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.js .rv.in{opacity:1;transform:none}
 
 @media (max-width:960px){
   .links,.nav-cta{display:none}.burger{display:block}
