@@ -5,39 +5,39 @@ import os, html
 AREAS = [
   dict(slug="orlando", city="Orlando", county="Orange County",
     intro="Orlando moves fast. Between tourism, hospitality and one of the busiest home-services markets in Florida, customers compare a handful of businesses and book whoever answers first.",
-    angle="We build Orlando businesses a site that ranks locally and a follow-up system that replies in seconds — so you win the job before a competitor calls back.",
+    angle="We build Orlando businesses a site that ranks locally and a follow-up system that replies in seconds, so you win the job before a competitor calls back.",
     industries=["Home services","Contractors","Restaurants","Med spas","Real estate","Event & hospitality"],
     faq=[("Do you only work with Orlando businesses?","Orlando and Central Florida are home base, so we know the market and can meet in person. We also take select clients elsewhere in Florida."),
          ("Can you help with bilingual customers?","Yes. We build English and Spanish pages and set up follow-up messages in both languages, which matters a lot across Orlando.")]),
   dict(slug="winter-park", city="Winter Park", county="Orange County",
     intro="Winter Park customers expect polish. Boutique retail, salons, wellness studios and professional firms here compete on reputation as much as price.",
-    angle="We pair a refined, on-brand website with booking, reminders and an automatic review engine — so your online presence matches the experience you deliver.",
+    angle="We pair a refined, on-brand website with booking, reminders and an automatic review engine, so your online presence matches the experience you deliver.",
     industries=["Boutiques","Salons & spas","Wellness studios","Professional services","Interior design","Restaurants"],
-    faq=[("Can the site match a premium brand?","That's the point. Design is custom to your brand — not a template — and we can coordinate photography so it looks as good as your space."),
+    faq=[("Can the site match a premium brand?","That's the point. Design is custom to your brand, not a template, and we can coordinate photography so it looks as good as your space."),
          ("How do reviews get collected?","After an appointment or sale, customers automatically get a short text with a link to leave a Google review. You approve the wording.")]),
   dict(slug="kissimmee", city="Kissimmee", county="Osceola County",
-    intro="Kissimmee runs on vacation rentals, attractions traffic and a fast-growing local population — which means lots of inquiries, often after hours and in more than one language.",
+    intro="Kissimmee runs on vacation rentals, attractions traffic and a fast-growing local population, which means lots of inquiries, often after hours and in more than one language.",
     angle="We set up instant text-back, online booking and bilingual follow-up so every inquiry gets answered, even at 11 p.m. on a Saturday.",
     industries=["Vacation rentals","Property management","Auto services","Home services","Restaurants","Tour & activity operators"],
     faq=[("What happens when I miss a call?","The caller automatically gets a text within seconds offering to help or book a time, and the lead lands in your pipeline."),
-         ("Can I manage leads from my phone?","Yes. Everything — conversations, pipeline, booking — is available in a mobile app.")]),
+         ("Can I manage leads from my phone?","Yes. Everything (conversations, pipeline, booking) is available in a mobile app.")]),
   dict(slug="lake-mary", city="Lake Mary", county="Seminole County",
     intro="Lake Mary is a hub for corporate offices and professional services, where clients research thoroughly before they ever reach out.",
-    angle="We build credibility-first websites with clear offers and lead capture that feeds a structured pipeline — so long sales cycles don't slip through the cracks.",
+    angle="We build credibility-first websites with clear offers and lead capture that feeds a structured pipeline, so long sales cycles don't slip through the cracks.",
     industries=["Professional services","Financial & insurance","Healthcare practices","B2B services","Tech & consulting","Real estate"],
     faq=[("Does this work for B2B or longer sales cycles?","Yes. We set up pipeline stages and nurture sequences that keep you top of mind over weeks or months, not just days."),
          ("Can my team share the CRM?","Absolutely. Add team members, assign leads and see who's following up on what.")]),
   dict(slug="altamonte-springs", city="Altamonte Springs", county="Seminole County",
-    intro="Altamonte Springs packs retail, medical offices and service businesses into a busy corridor — customers have plenty of options a few minutes away.",
+    intro="Altamonte Springs packs retail, medical offices and service businesses into a busy corridor, and customers have plenty of options a few minutes away.",
     angle="We help you stand out with local SEO, a fast mobile site and automated reminders that cut no-shows and keep customers coming back.",
     industries=["Medical & dental","Retail","Fitness","Auto services","Beauty","Home services"],
     faq=[("Can you reduce appointment no-shows?","Automated text and email reminders before each appointment, with easy confirm or reschedule links, make a big difference."),
          ("Do you handle Google Maps?","Yes. We set up and optimize your Google Business Profile so you show up in the local map results.")]),
   dict(slug="sanford", city="Sanford", county="Seminole County",
-    intro="Sanford's historic downtown and riverfront have brought a new wave of restaurants, breweries, shops and makers — plus steady demand for trades and home services.",
+    intro="Sanford's historic downtown and riverfront have brought a new wave of restaurants, breweries, shops and makers, plus steady demand for trades and home services.",
     angle="We build sites that tell your story and systems that turn foot traffic and online searches into bookings, orders and repeat customers.",
     industries=["Restaurants & breweries","Shops & makers","Trades","Home services","Event venues","Real estate"],
-    faq=[("We're a small team — is this overkill?","No. The whole point is to save small teams time. Automations handle the repetitive follow-up so you don't have to."),
+    faq=[("We're a small team. Is this overkill?","No. The whole point is to save small teams time. Automations handle the repetitive follow-up so you don't have to."),
          ("Can you work with my existing website?","Yes. We can plug the CRM and automations into what you have, or rebuild it if it's holding you back.")]),
   dict(slug="clermont", city="Clermont", county="Lake County",
     intro="Clermont is one of the fastest-growing areas in Lake County, with new neighborhoods driving demand for contractors, fitness, and family services.",
@@ -46,7 +46,7 @@ AREAS = [
     faq=[("How fast can we get set up?","Most website-plus-system builds go live in about three weeks, depending on content and approvals."),
          ("Will this help me reach new residents?","Yes. Local SEO and Google Business Profile optimization put you in front of people searching in Clermont and nearby.")]),
   dict(slug="apopka", city="Apopka", county="Orange County",
-    intro="Apopka — Florida's indoor foliage capital — is home to nurseries, landscapers and a growing number of trades and family-owned businesses.",
+    intro="Apopka, Florida's indoor foliage capital, is home to nurseries, landscapers and a growing number of trades and family-owned businesses.",
     angle="We build simple, effective sites with quote requests that land straight in your pipeline, plus follow-ups that turn estimates into signed jobs.",
     industries=["Nurseries & growers","Landscaping","Trades","Home services","Auto services","Local retail"],
     faq=[("Can customers request a quote online?","Yes. Quote forms feed directly into your CRM and trigger an instant confirmation and follow-up sequence."),
@@ -57,7 +57,7 @@ AREAS = [
 SERVICES = [
   dict(slug="web-design", name="Web Design", short="Website <em>Design</em>",
     h1="Website <em>design</em> that<br>books <em>jobs</em> in",
-    pitch="A fast, mobile-first website written to convert — clear offers, strong calls to action and lead forms that drop straight into your CRM.",
+    pitch="A fast, mobile-first website written to convert, with clear offers, strong calls to action and lead forms that drop straight into your CRM.",
     incl=["Custom design (no templates)","Conversion-focused copywriting","Mobile-first & fast loading","Lead forms connected to your CRM","English & Spanish pages","Hosting, security & updates"],
     steps=[("Discover","We learn your services, customers and what makes you different."),("Design","You review a custom design built around your brand and offers."),("Build","We write, build and connect forms, booking and tracking."),("Launch","Go live, then we monitor and improve what converts.")],
     faq=[("How long does a website take?","Most sites launch in about three weeks, depending on how quickly content and approvals come in."),("Do I own the website?","Yes. Your content and domain are yours.")]),
@@ -66,25 +66,25 @@ SERVICES = [
     pitch="Every lead from your website, calls, texts, DMs and email in one place, with pipeline stages that match how you actually sell.",
     incl=["Pipeline stages built for your process","Unified inbox: SMS, email, chat, social","Lead source tracking","Deal values & forecasting","Team access & lead assignment","Mobile app"],
     steps=[("Map","We map how leads come in and how you close them today."),("Build","We set up pipelines, fields, tags and your unified inbox."),("Connect","Website, phone, calendar and social all feed the CRM."),("Train","We train you and your team and hand over a simple playbook.")],
-    faq=[("I already use spreadsheets — why switch?","A CRM shows every lead, conversation and next step in one place and triggers follow-ups automatically. Spreadsheets can’t."),("Can you import my existing contacts?","Yes. We import and organize your current list during setup.")]),
+    faq=[("I already use spreadsheets. Why switch?","A CRM shows every lead, conversation and next step in one place and triggers follow-ups automatically. Spreadsheets can’t."),("Can you import my existing contacts?","Yes. We import and organize your current list during setup.")]),
   dict(slug="automation", name="Follow-up Automation", short="Follow-up <em>Automation</em>",
     h1="Follow-up <em>on</em> autopilot<br>for <em>businesses</em> in",
-    pitch="Instant replies, missed-call text-back, estimate reminders and re-engagement campaigns by SMS and email — so no lead waits and none go cold.",
+    pitch="Instant replies, missed-call text-back, estimate reminders and re-engagement campaigns by SMS and email, so no lead waits and none go cold.",
     incl=["Missed-call text-back","Instant new-lead auto-replies","Estimate & quote follow-ups","Appointment reminders","Win-back & reactivation campaigns","Bilingual message templates"],
     steps=[("Audit","We find where leads are slipping today."),("Write","We write the messages in your voice, in English and Spanish."),("Automate","We build the sequences and triggers in your CRM."),("Optimize","We track replies and bookings and refine what works.")],
     faq=[("Will automated messages sound robotic?","No. We write them in your voice, and replies come straight to you so the conversation stays personal."),("Can I pause a sequence for a lead?","Yes. Any reply or stage change can stop a sequence automatically, or you can pause it manually.")]),
   dict(slug="booking-reviews", name="Booking & Reviews", short="Booking &amp; <em>Reviews</em>",
     h1="Online <em>booking</em> and<br>5-star <em>reviews</em> in",
-    pitch="Let customers book themselves, get automatic reminders, and receive a review request after every job — building your reputation on repeat.",
+    pitch="Let customers book themselves, get automatic reminders, and receive a review request after every job, building your reputation on repeat.",
     incl=["Online booking calendar","Text & email reminders","Confirm / reschedule links","Automatic Google review requests","Review monitoring & replies","Embeddable booking on your site"],
     steps=[("Set up","We configure your services, hours and calendar rules."),("Embed","Booking goes on your site, Google profile and social links."),("Remind","Automatic reminders cut no-shows."),("Review","Happy customers get a quick review request after each visit.")],
-    faq=[("Will this reduce no-shows?","Automated reminders with easy confirm or reschedule links are one of the most effective ways to cut no-shows."),("Is asking for reviews allowed?","Yes — we send the same polite request to every customer, which follows Google’s guidelines.")]),
+    faq=[("Will this reduce no-shows?","Automated reminders with easy confirm or reschedule links are one of the most effective ways to cut no-shows."),("Is asking for reviews allowed?","Yes. We send the same polite request to every customer, which follows Google’s guidelines.")]),
   dict(slug="local-seo", name="Local SEO", short="Local <em>SEO</em>",
     h1="Get <em>found</em> on Google<br><em>in</em>",
-    pitch="Show up when customers search for what you do — on Google Search and in the Maps pack — with a strategy built for your city.",
+    pitch="Show up when customers search for what you do, on Google Search and in the Maps pack, with a strategy built for your city.",
     incl=["Google Business Profile optimization","On-page SEO for local keywords","Local citations & directories","City & service landing pages","Review strategy","Monthly ranking reports"],
     steps=[("Audit","We check your site, profile and competitors."),("Optimize","We fix technical issues and optimize pages and your profile."),("Build","Citations, content and reviews grow your local authority."),("Report","Monthly reports show rankings, calls and leads.")],
-    faq=[("How long does SEO take?","Most businesses see early movement in 30–60 days, with bigger gains over 3–6 months."),("Are there contracts?","Standard SEO plans are month-to-month. Founding Client plans have a 6-month minimum.")]),
+    faq=[("How long does SEO take?","Most businesses see early movement in 30 to 60 days, with bigger gains over 3 to 6 months."),("Are there contracts?","Standard SEO plans are month-to-month. Founding Client plans have a 6-month minimum.")]),
 ]
 
 def e(x): return html.escape(x)
@@ -131,7 +131,7 @@ def contact(a, label, hidden):
     <div class="info rv">
       <p class="eyebrow">Contact</p>
       <h2 style="margin-top:14px">Grow your <em>{e(a['city'])}</em> <span class="hl">business</span></h2>
-      <p>Tell us about your business and we’ll reply within one business day with a free audit — what’s leaking and how to fix it.</p>
+      <p>Tell us about your business and we’ll reply within one business day with a free audit showing what’s leaking and how to fix it.</p>
       <a href="tel:+13216217016">(321) 621-7016</a>
       <a href="mailto:contact@mindsyncagency.com">contact@mindsyncagency.com</a>
     </div>
@@ -183,7 +183,7 @@ def hub(a):
 <section>
   <div class="wrap intro">
     <div class="rv"><p class="eyebrow">Built for {e(a['city'])}</p><h2 style="margin-top:16px">More <em>leads</em> answered. More <span class="hl">deals</span> closed.</h2></div>
-    <div class="rv"><p>{e(a['angle'])}</p><p>Everything runs from one place — website, inbox, pipeline, calendar and reviews — in English or Spanish.</p></div>
+    <div class="rv"><p>{e(a['angle'])}</p><p>Everything runs from one place: website, inbox, pipeline, calendar and reviews, in English or Spanish.</p></div>
   </div>
 </section>
 <section class="band" id="services">
